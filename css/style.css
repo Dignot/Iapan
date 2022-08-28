@@ -32,7 +32,7 @@
       box-sizing: inherit;
   }
   body{
-      font-family: 'Lato',sans-serif;
+      font-family: 'Lato';
       font-size: normal;
       font-size: 16px;
       line-height: 1.2;
@@ -403,16 +403,18 @@ transition: .15s all;
   }
   .toop_carde{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-gap: 57px;
     
   }
   .toop_card{
     position: relative;
+    
   }
   .toop_cards{
     display: flex;
     flex-direction: column;
+    grid-column: span 2;
   }
  
   .toop_card_info_text{
@@ -427,7 +429,7 @@ transition: .15s all;
     background: #006DFE;
     border: none;
     color:white;
-    padding: 12px 19px;
+    padding: 12px 16px;
     text-decoration: none;
     width: 118px;
     margin: auto 0 0 0;
@@ -529,8 +531,55 @@ transition: .15s all;
 
  /*footer end*/
  /*media start*/
-
- @media screen and (max-width: 768px){
+ @media screen and (max-width: 936px){
+  .seach_form_fild{
+    margin-bottom: 25px;
+  }
+  .benefist_karts{
+    padding: 0 15px;
+    grid-column-gap: 28px;
+  }
+  .benefist_title{
+    padding: 55px 15px;
+  }
+  .benefits_wrap{
+    box-shadow: none;
+  }
+  .benefits{
+    margin-bottom:75px ;
+  }
+  .benefist_kart{
+    padding-bottom: 55px;
+  }
+  .plases_mesta_lg{
+    grid-column: span 6;
+  }
+  .plases_mesta_sm{
+    grid-column: span 6;
+  }
+  .toor_wrap{
+    grid-column-gap:35px ;
+  }
+  .toor_info{
+    padding-left:0 ;
+  }
+  .toor_info_title{margin-bottom:15px ;
+  }
+  .toor_text{
+    margin-bottom: 15px;
+  }
+  .toop_cards{
+    grid-column: span 3;
+    
+  }
+  .toop_carde{
+    grid-gap:25px ;
+  }
+  .toop_card_info_but{
+    padding: 12px 16px;
+  }
+ }
+ @media screen and (max-width: 767px){
   .header_burger{
     display: block;
   }  
@@ -590,6 +639,82 @@ transition: .15s all;
    .header_nav_close_krest:last-child{
     transform: translateY(-50%) rotate(-45deg);
    }
+   .benefist_kart{
+    grid-column:span 3 ;
+   }
+   .seach_form_fild{
+    margin-right: 0px;
+    width: 100%;
+
+   }
+   .seach_form_fild::placeholder{
+    font-size: 16px;
+    padding-bottom: 10px
+   }
+   .intro{
+    padding-top: 130px;
+   }
+   .intro_title{
+    font-size:32px ;
+    line-height: 48px;
+   }
+   .intro_sab_title{
+    font-size: 14px;
+   }
+   .header_wrapper{
+    padding-top: 28px;
+    margin-bottom: 20px;
+   }
+   .header_nav{
+    height: 100%;
+    padding-left: 35px;
+   }
+   .section_title{
+    margin-bottom: 25px;
+   }
+   .section_title::after{
+    width: 78px;
+   }
+   .plases_mesta_pic{
+    height: 210px;
+   }
+   .toor_wrap_pic, .toor_info{
+    grid-column: span 2 ;
+   }
+   .toor_wrap{
+    grid-gap: 24px;
+   }
+   .toor{
+    margin-bottom: 35px;
+   }
+   .toor_wrap_pic_mob{
+    grid-row-start:-1 ;
+   }
+   .toop_cards{
+    grid-column:span 6;
+   }
+   .footer{
+    padding: 76px 0;
+   }
+   .footer_logo{
+    flex-basis: 100%;
+    margin-bottom: 12px;
+   }
+   .footer_nev{
+    flex-basis: 100%;
+   }
+   .footer_menu{
+    width: 50%;
+    margin-bottom: 20px;
+   }
+   .benefist_kart_pick_text{
+    margin-bottom: 10px;
+   }
+   .toop_card_stat{
+    max-width: 386px;
+   }
+  
  }
+ 
 
  /*media end*/
